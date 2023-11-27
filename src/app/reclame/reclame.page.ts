@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { AuthenticateService } from '../services/auth.service';
 import { CrudService } from '../services/crud.service';
 import { Storage, getDownloadURL, ref, uploadBytesResumable } from '@angular/fire/storage';
@@ -15,9 +15,9 @@ import { ScrollDetail } from '@ionic/angular';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-home',
-  templateUrl: 'home.page.html',
-  styleUrls: ['home.page.scss'],
+  selector: 'app-reclame',
+  templateUrl: './reclame.page.html',
+  styleUrls: ['./reclame.page.scss'],
   animations: [
     trigger('openClose', [
       // ...
@@ -38,8 +38,7 @@ import { Router } from '@angular/router';
     ]),
   ],
 })
-export class HomePage {
-  
+export class ReclamePage{
 
   isOpen = true;
 
@@ -102,5 +101,8 @@ export class HomePage {
 
  
 }
+
+
+
 
 

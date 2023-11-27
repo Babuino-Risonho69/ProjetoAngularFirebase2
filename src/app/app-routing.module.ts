@@ -10,6 +10,18 @@ const routes: Routes = [
     path: '',
     redirectTo: 'home',
     pathMatch: 'full'
+  },
+  {
+    path: 'reclame',
+    loadChildren: () => import('./reclame/reclame.module').then( m => m.ReclamePageModule)
+  },
+  {
+    path: 'galeria',
+    loadChildren: () => import('./galeria/galeria.module').then( m => m.GaleriaPageModule)
+  },
+  {
+    path: 'secretaria',
+    loadChildren: () => import('./secretaria/secretaria.module').then( m => m.SecretariaPageModule)
   }
 ];
 

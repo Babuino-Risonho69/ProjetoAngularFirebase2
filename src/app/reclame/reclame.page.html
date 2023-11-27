@@ -1,0 +1,75 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-row>
+      <ion-col size="12" size-lg="6">
+        <ion-row>
+          <ion-col size="3" size-lg="1">
+            <img src="../../assets/img/logogaspar.png" class="logo">
+          </ion-col>
+          <ion-col size="9" size-lg="11">
+            <h1>E.E Dr Gaspar Ricardo Junior</h1>
+          </ion-col>
+        </ion-row>
+      </ion-col>
+
+      <ion-col size="12" size-lg="6" class="ion-text-end">
+        <ion-row class="ion-justify-content-end">
+          <ion-col size="12" size-lg="auto">
+            <ion-item lines="none" routerLink="/galeria">
+              <ion-icon name="albums-outline" slot="start"></ion-icon>
+              <ion-label slot="end">Galeria</ion-label>
+            </ion-item>
+          </ion-col>
+          <ion-col size="12" size-lg="auto">
+            <ion-item lines="none" routerLink="/galeria">
+              <ion-icon name="chatbubble-outline"></ion-icon>
+              <ion-label slot="end">Secretaria</ion-label>
+            </ion-item>
+          </ion-col>
+          <ion-col size="12" size-lg="auto">
+            <ion-item lines="none" routerLink="/galeria">
+              <ion-icon name="megaphone-outline"></ion-icon>
+              <ion-label slot="end">Reclame Aqui </ion-label>
+            </ion-item>
+          </ion-col>
+        </ion-row>
+      </ion-col>
+    </ion-row>
+
+    <ion-row [@openClose]="isOpen ? 'open' : 'closed'">
+      <ion-col size="12" size-lg="6">
+        <ion-item lines="none" class="telefone">
+          <ion-icon name="call-outline"></ion-icon>
+          <ion-label>(15) 3266-1666</ion-label>
+        </ion-item>
+      </ion-col>
+
+      <ion-col size="12" size-lg="6" class="ion-text-end">
+        <ion-item lines="none" class="endereco">
+          <ion-icon name="location-outline" slot="end"></ion-icon>
+          <ion-label slot="end">R. Santo Antônio, 186 - Centro, Iperó - SP, 18560-000</ion-label>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" [scrollEvents]="true" (ionScroll)="handleScroll($any($event))">
+
+  <ion-row class="ion-justify-content-center">
+    <ion-col size="4" class="ion-text-center">
+      <ion-item>
+        <ion-input>
+
+          <ion-text-area  placeholder=""
+            [(ngModel)]="this.reclamacao.texto"></ion-text-area>
+          <ion-button (click)="enviar()">enviar</ion-button>
+
+        </ion-input>
+      </ion-item>
+    </ion-col>
+  </ion-row>
+
+
+  
+</ion-content>

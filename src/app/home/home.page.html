@@ -22,13 +22,13 @@
           </ion-col>
           <ion-col size="12" size-lg="auto">
             <ion-item lines="none" routerLink="/galeria">
-              <ion-icon name="albums-outline" slot="start"></ion-icon>
+              <ion-icon name="chatbubble-outline"></ion-icon>
               <ion-label slot="end">Secretaria</ion-label>
             </ion-item>
           </ion-col>
           <ion-col size="12" size-lg="auto">
             <ion-item lines="none" routerLink="/galeria">
-              <ion-icon name="albums-outline" slot="start"></ion-icon>
+              <ion-icon name="megaphone-outline"></ion-icon>
               <ion-label slot="end">Reclame Aqui </ion-label>
             </ion-item>
           </ion-col>
@@ -89,6 +89,12 @@
           <div class="carousel-item">
             <img src="../../assets/img/Pracinha.jpeg" class="d-block w-100" alt="...">
           </div>
+          <div class="carousel-item">
+            <img src="../../assets/img/refeitorio.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="../../assets/img/quadra.jpeg" class="d-block w-100" alt="...">
+          </div>
         
         </div>
       </div>
@@ -127,18 +133,7 @@
 
 
 <!-- TITULO -->
-<ion-row class="ion-justify-content-center">
-  <ion-col size="4" class="ion-text-center">
-    <ion-item>
-      <ion-input>
-        <ion-input label="Stacked label" labelPlacement="stacked" placeholder="Enter text" [(ngModel)]="this.reclamacao.texto"></ion-input>
 
-
-<ion-button (click)="enviar()">enviar</ion-button>
-      </ion-input>
-    </ion-item>
-  </ion-col>
-</ion-row>
 
 <!-- <ng-container *ngFor="let reclamacao of this.reclamacoes">
   <ion-row class="ion-justify-content-center">
